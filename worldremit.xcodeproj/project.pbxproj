@@ -17,9 +17,27 @@
 		AC4DE8311AB6D357002616A0 /* CurrencyPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4DE8301AB6D357002616A0 /* CurrencyPicker.swift */; };
 		AC4DE8351AB6EAA7002616A0 /* SelectCurrencyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4DE8341AB6EAA7002616A0 /* SelectCurrencyViewController.swift */; };
 		AC4DE8371AB6F068002616A0 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4DE8361AB6F068002616A0 /* Transaction.swift */; };
-		ACE79AEC1AB714E20091153D /* Server.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE79AEB1AB714E20091153D /* Server.swift */; };
 		ACE79AEE1AB723750091153D /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACE79AED1AB723750091153D /* AddressBookUI.framework */; };
 		ACE79AF01AB7283E0091153D /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE79AEF1AB7283E0091153D /* RootViewController.swift */; };
+		ACE79AF41AB72E600091153D /* Server.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE79AF11AB72E480091153D /* Server.swift */; };
+		ACE79AF51AB72E630091153D /* MockServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE79AEB1AB714E20091153D /* MockServer.swift */; };
+		ACE79AF71AB72E960091153D /* ServerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE79AF61AB72E960091153D /* ServerProtocol.swift */; };
+		ACE79AF81AB72EF50091153D /* ServerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE79AF61AB72E960091153D /* ServerProtocol.swift */; };
+		ACE79AF91AB72F2C0091153D /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4DE8361AB6F068002616A0 /* Transaction.swift */; };
+		ACE79AFD1AB74FBE0091153D /* ServerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE79AF61AB72E960091153D /* ServerProtocol.swift */; };
+		ACE79AFE1AB74FBE0091153D /* CurrencyPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4DE8301AB6D357002616A0 /* CurrencyPicker.swift */; };
+		ACE79AFF1AB74FBE0091153D /* SendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4DE8101AB6C1AE002616A0 /* SendViewController.swift */; };
+		ACE79B001AB74FBE0091153D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4DE80E1AB6C1AE002616A0 /* AppDelegate.swift */; };
+		ACE79B011AB74FBE0091153D /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE79AEF1AB7283E0091153D /* RootViewController.swift */; };
+		ACE79B021AB74FBE0091153D /* SelectCurrencyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4DE8341AB6EAA7002616A0 /* SelectCurrencyViewController.swift */; };
+		ACE79B041AB74FBE0091153D /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4DE8361AB6F068002616A0 /* Transaction.swift */; };
+		ACE79B061AB74FBE0091153D /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACE79AED1AB723750091153D /* AddressBookUI.framework */; };
+		ACE79B071AB74FBE0091153D /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C05E90A911F79062AD5FAF89 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		ACE79B091AB74FBE0091153D /* CurrencyPicker.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC4DE82E1AB6D2B0002616A0 /* CurrencyPicker.xib */; };
+		ACE79B0A1AB74FBE0091153D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC4DE8121AB6C1AE002616A0 /* Main.storyboard */; };
+		ACE79B0B1AB74FBE0091153D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC4DE8171AB6C1AE002616A0 /* LaunchScreen.xib */; };
+		ACE79B0C1AB74FBE0091153D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC4DE8151AB6C1AE002616A0 /* Images.xcassets */; };
+		ACE79B141AB74FFE0091153D /* MockServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE79AEB1AB714E20091153D /* MockServer.swift */; };
 		F7564DFE3C341E4AC2FBFDDB /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C05E90A911F79062AD5FAF89 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
@@ -50,9 +68,13 @@
 		AC4DE8341AB6EAA7002616A0 /* SelectCurrencyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectCurrencyViewController.swift; sourceTree = "<group>"; };
 		AC4DE8361AB6F068002616A0 /* Transaction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
 		AC960E721AB6F2ED00291201 /* Bridging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bridging.h; sourceTree = "<group>"; };
-		ACE79AEB1AB714E20091153D /* Server.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Server.swift; sourceTree = "<group>"; };
+		ACE79AEB1AB714E20091153D /* MockServer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockServer.swift; sourceTree = "<group>"; };
 		ACE79AED1AB723750091153D /* AddressBookUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBookUI.framework; path = System/Library/Frameworks/AddressBookUI.framework; sourceTree = SDKROOT; };
 		ACE79AEF1AB7283E0091153D /* RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		ACE79AF11AB72E480091153D /* Server.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Server.swift; sourceTree = "<group>"; };
+		ACE79AF61AB72E960091153D /* ServerProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServerProtocol.swift; sourceTree = "<group>"; };
+		ACE79B121AB74FBE0091153D /* worldremit copy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "worldremit copy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACE79B131AB74FBF0091153D /* worldremit mock-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "worldremit mock-Info.plist"; path = "/Users/mirko/Dropbox/personal/Code/MyCode/worldremit/worldremit mock-Info.plist"; sourceTree = "<absolute>"; };
 		B6DDB376251AA510A76801D8 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		C05E90A911F79062AD5FAF89 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -71,6 +93,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACE79B051AB74FBE0091153D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACE79B061AB74FBE0091153D /* AddressBookUI.framework in Frameworks */,
+				ACE79B071AB74FBE0091153D /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,6 +134,7 @@
 				AC4DE80A1AB6C1AE002616A0 /* Products */,
 				1BEA0AE2F2E2DDC6B8E52D9B /* Pods */,
 				530FA730673C171B333C0413 /* Frameworks */,
+				ACE79B131AB74FBF0091153D /* worldremit mock-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -111,6 +143,7 @@
 			children = (
 				AC4DE8091AB6C1AE002616A0 /* worldremit.app */,
 				AC4DE81E1AB6C1AE002616A0 /* worldremitTests.xctest */,
+				ACE79B121AB74FBE0091153D /* worldremit copy.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -123,7 +156,9 @@
 				ACE79AEF1AB7283E0091153D /* RootViewController.swift */,
 				AC960E721AB6F2ED00291201 /* Bridging.h */,
 				AC4DE8361AB6F068002616A0 /* Transaction.swift */,
-				ACE79AEB1AB714E20091153D /* Server.swift */,
+				ACE79AEB1AB714E20091153D /* MockServer.swift */,
+				ACE79AF11AB72E480091153D /* Server.swift */,
+				ACE79AF61AB72E960091153D /* ServerProtocol.swift */,
 				AC4DE8341AB6EAA7002616A0 /* SelectCurrencyViewController.swift */,
 				AC4DE8121AB6C1AE002616A0 /* Main.storyboard */,
 				AC4DE8151AB6C1AE002616A0 /* Images.xcassets */,
@@ -201,6 +236,26 @@
 			productReference = AC4DE81E1AB6C1AE002616A0 /* worldremitTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		ACE79AFA1AB74FBE0091153D /* worldremit-mock */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ACE79B0F1AB74FBE0091153D /* Build configuration list for PBXNativeTarget "worldremit-mock" */;
+			buildPhases = (
+				ACE79AFB1AB74FBE0091153D /* Check Pods Manifest.lock */,
+				ACE79AFC1AB74FBE0091153D /* Sources */,
+				ACE79B051AB74FBE0091153D /* Frameworks */,
+				ACE79B081AB74FBE0091153D /* Resources */,
+				ACE79B0D1AB74FBE0091153D /* Embed Pods Frameworks */,
+				ACE79B0E1AB74FBE0091153D /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "worldremit-mock";
+			productName = worldremit;
+			productReference = ACE79B121AB74FBE0091153D /* worldremit copy.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -234,6 +289,7 @@
 			targets = (
 				AC4DE8081AB6C1AE002616A0 /* worldremit */,
 				AC4DE81D1AB6C1AE002616A0 /* worldremitTests */,
+				ACE79AFA1AB74FBE0091153D /* worldremit-mock */,
 			);
 		};
 /* End PBXProject section */
@@ -254,6 +310,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACE79B081AB74FBE0091153D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACE79B091AB74FBE0091153D /* CurrencyPicker.xib in Resources */,
+				ACE79B0A1AB74FBE0091153D /* Main.storyboard in Resources */,
+				ACE79B0B1AB74FBE0091153D /* LaunchScreen.xib in Resources */,
+				ACE79B0C1AB74FBE0091153D /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,6 +357,51 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
+		ACE79AFB1AB74FBE0091153D /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		ACE79B0D1AB74FBE0091153D /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ACE79B0E1AB74FBE0091153D /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		CE00A745CA5061EE54AF9285 /* Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -312,12 +424,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACE79AF71AB72E960091153D /* ServerProtocol.swift in Sources */,
 				AC4DE8311AB6D357002616A0 /* CurrencyPicker.swift in Sources */,
 				AC4DE8111AB6C1AE002616A0 /* SendViewController.swift in Sources */,
 				AC4DE80F1AB6C1AE002616A0 /* AppDelegate.swift in Sources */,
 				ACE79AF01AB7283E0091153D /* RootViewController.swift in Sources */,
 				AC4DE8351AB6EAA7002616A0 /* SelectCurrencyViewController.swift in Sources */,
-				ACE79AEC1AB714E20091153D /* Server.swift in Sources */,
+				ACE79AF41AB72E600091153D /* Server.swift in Sources */,
 				AC4DE8371AB6F068002616A0 /* Transaction.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -326,7 +439,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACE79AF51AB72E630091153D /* MockServer.swift in Sources */,
 				AC4DE8251AB6C1AE002616A0 /* worldremitTests.swift in Sources */,
+				ACE79AF91AB72F2C0091153D /* Transaction.swift in Sources */,
+				ACE79AF81AB72EF50091153D /* ServerProtocol.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACE79AFC1AB74FBE0091153D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACE79B141AB74FFE0091153D /* MockServer.swift in Sources */,
+				ACE79AFD1AB74FBE0091153D /* ServerProtocol.swift in Sources */,
+				ACE79AFE1AB74FBE0091153D /* CurrencyPicker.swift in Sources */,
+				ACE79AFF1AB74FBE0091153D /* SendViewController.swift in Sources */,
+				ACE79B001AB74FBE0091153D /* AppDelegate.swift in Sources */,
+				ACE79B011AB74FBE0091153D /* RootViewController.swift in Sources */,
+				ACE79B021AB74FBE0091153D /* SelectCurrencyViewController.swift in Sources */,
+				ACE79B041AB74FBE0091153D /* Transaction.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -495,6 +626,30 @@
 			};
 			name = Release;
 		};
+		ACE79B101AB74FBE0091153D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 758027643F827D1FCFB3DF06 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "$(SRCROOT)/worldremit mock-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "worldremit copy";
+				SWIFT_OBJC_BRIDGING_HEADER = worldremit/Bridging.h;
+			};
+			name = Debug;
+		};
+		ACE79B111AB74FBE0091153D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B6DDB376251AA510A76801D8 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "$(SRCROOT)/worldremit mock-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "worldremit copy";
+				SWIFT_OBJC_BRIDGING_HEADER = worldremit/Bridging.h;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -521,6 +676,15 @@
 			buildConfigurations = (
 				AC4DE82C1AB6C1AE002616A0 /* Debug */,
 				AC4DE82D1AB6C1AE002616A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ACE79B0F1AB74FBE0091153D /* Build configuration list for PBXNativeTarget "worldremit-mock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACE79B101AB74FBE0091153D /* Debug */,
+				ACE79B111AB74FBE0091153D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

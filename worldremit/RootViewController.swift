@@ -10,11 +10,13 @@ import UIKit
 
 class RootViewController: UIViewController, SendViewControllerDelegate {
     
-    let server = Server()
+    let server = createServer()
     
     @IBAction func sendMoneyTapped(sender: AnyObject) {
         self.server.readCurrencies { (error, currencies) -> Void in
-            self.displaySendViewController(currencies)
+            dispatch_async(dispatch_get_main_queue(), { () -> Void in
+                self.displaySendViewController(currencies!)
+            })
         }
     }
     

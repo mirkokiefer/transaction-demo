@@ -43,20 +43,32 @@ class SendViewController: UIViewController, SelectCurrencyViewControllerDelegate
         super.viewDidLoad()
         self.registerEvents()
         self.sendingAmountField!.inputAccessoryView = self.createSendAmountFieldToolbar()
+        self.receivingCurrencyLabel.text = self.transaction.receivingCurrency
+        self.sendingCurrencyLabel.text = self.transaction.sendingCurrency
     }
     
     func registerEvents() {
         self.transaction.bk_addObserverForKeyPath("sendingCurrency", task: { (sender) -> Void in
             self.sendingCurrencyLabel.text = self.transaction.sendingCurrency
+            self.updateReceivingAmount()
         })
         self.transaction.bk_addObserverForKeyPath("receivingCurrency", task: { (sender) -> Void in
             self.receivingCurrencyLabel.text = self.transaction.receivingCurrency
+            self.updateReceivingAmount()
         })
         self.transaction.bk_addObserverForKeyPath("sendingAmount", task: { (sender) -> Void in
             self.updateReceivingAmount()
         })
         self.transaction.bk_addObserverForKeyPath("receivingAmount", task: { (sender) -> Void in
-            self.receivingAmountField.text = self.transaction.receivingAmount!.stringValue
+            let receivingAmount = self.transaction.receivingAmount
+            if (receivingAmount == nil) {
+                self.receivingAmountField.text = ""
+                return
+            }
+            let text = receivingAmount!.stringValue
+            dispatch_async(dispatch_get_main_queue(), { () -> Void in
+                self.receivingAmountField.text = text
+            })
         })
         self.transaction.bk_addObserverForKeyPath("recipient", task: { (sender) -> Void in
             self.recipientField.text = self.transaction.recipient
@@ -83,7 +95,12 @@ class SendViewController: UIViewController, SelectCurrencyViewControllerDelegate
         let sendingAmount = transaction.sendingAmount!.doubleValue
         let sendingCurrency = transaction.sendingCurrency!
         let receivingCurrency = transaction.receivingCurrency!
+        self.receivingAmountField.text = "Calculating..."
         self.server.calculateReceiveAmount(sendingAmount, sendCurrency: sendingCurrency, receiveCurrency: receivingCurrency) { (error, result) -> Void in
+            let userChangedAmountAfterRequest = sendingAmount != transaction.sendingAmount
+            if (userChangedAmountAfterRequest) {
+                return
+            }
             transaction.receivingAmount = result
         }
     }
@@ -134,10 +151,12 @@ class SendViewController: UIViewController, SelectCurrencyViewControllerDelegate
         
         self.activityIndicator.startAnimating()
         self.server.sendMoney(self.transaction, handler: { (error) -> Void in
-            let message = "\(currency) \(amount!) will be transferred to \(recipient!)."
-            let alert = UIAlertView(title: "Transaction successful", message: message, delegate: self, cancelButtonTitle: nil, otherButtonTitles: "Continue")
-            alert.show()
-            self.transactionSuccessAlert = alert
+            dispatch_async(dispatch_get_main_queue(), { () -> Void in
+                let message = "\(currency) \(amount!) will be transferred to \(recipient!)."
+                let alert = UIAlertView(title: "Transaction successful", message: message, delegate: self, cancelButtonTitle: nil, otherButtonTitles: "Continue")
+                alert.show()
+                self.transactionSuccessAlert = alert
+            })
         })
     }
     
