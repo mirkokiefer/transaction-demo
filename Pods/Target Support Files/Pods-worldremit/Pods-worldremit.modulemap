@@ -1,0 +1,6 @@
+framework module Pods_worldremit {
+  umbrella header "Pods-worldremit-umbrella.h"
+
+  export *
+  module * { export * }
+}
