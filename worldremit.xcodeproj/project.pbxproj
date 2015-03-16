@@ -17,6 +17,9 @@
 		AC4DE8311AB6D357002616A0 /* CurrencyPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4DE8301AB6D357002616A0 /* CurrencyPicker.swift */; };
 		AC4DE8351AB6EAA7002616A0 /* SelectCurrencyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4DE8341AB6EAA7002616A0 /* SelectCurrencyViewController.swift */; };
 		AC4DE8371AB6F068002616A0 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4DE8361AB6F068002616A0 /* Transaction.swift */; };
+		ACE79AEC1AB714E20091153D /* Server.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE79AEB1AB714E20091153D /* Server.swift */; };
+		ACE79AEE1AB723750091153D /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACE79AED1AB723750091153D /* AddressBookUI.framework */; };
+		ACE79AF01AB7283E0091153D /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE79AEF1AB7283E0091153D /* RootViewController.swift */; };
 		F7564DFE3C341E4AC2FBFDDB /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C05E90A911F79062AD5FAF89 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
@@ -47,6 +50,9 @@
 		AC4DE8341AB6EAA7002616A0 /* SelectCurrencyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectCurrencyViewController.swift; sourceTree = "<group>"; };
 		AC4DE8361AB6F068002616A0 /* Transaction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
 		AC960E721AB6F2ED00291201 /* Bridging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bridging.h; sourceTree = "<group>"; };
+		ACE79AEB1AB714E20091153D /* Server.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Server.swift; sourceTree = "<group>"; };
+		ACE79AED1AB723750091153D /* AddressBookUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBookUI.framework; path = System/Library/Frameworks/AddressBookUI.framework; sourceTree = SDKROOT; };
+		ACE79AEF1AB7283E0091153D /* RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		B6DDB376251AA510A76801D8 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		C05E90A911F79062AD5FAF89 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -56,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACE79AEE1AB723750091153D /* AddressBookUI.framework in Frameworks */,
 				F7564DFE3C341E4AC2FBFDDB /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -82,6 +89,7 @@
 		530FA730673C171B333C0413 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				ACE79AED1AB723750091153D /* AddressBookUI.framework */,
 				C05E90A911F79062AD5FAF89 /* Pods.framework */,
 			);
 			name = Frameworks;
@@ -112,8 +120,10 @@
 			children = (
 				AC4DE80E1AB6C1AE002616A0 /* AppDelegate.swift */,
 				AC4DE8101AB6C1AE002616A0 /* SendViewController.swift */,
+				ACE79AEF1AB7283E0091153D /* RootViewController.swift */,
 				AC960E721AB6F2ED00291201 /* Bridging.h */,
 				AC4DE8361AB6F068002616A0 /* Transaction.swift */,
+				ACE79AEB1AB714E20091153D /* Server.swift */,
 				AC4DE8341AB6EAA7002616A0 /* SelectCurrencyViewController.swift */,
 				AC4DE8121AB6C1AE002616A0 /* Main.storyboard */,
 				AC4DE8151AB6C1AE002616A0 /* Images.xcassets */,
@@ -305,7 +315,9 @@
 				AC4DE8311AB6D357002616A0 /* CurrencyPicker.swift in Sources */,
 				AC4DE8111AB6C1AE002616A0 /* SendViewController.swift in Sources */,
 				AC4DE80F1AB6C1AE002616A0 /* AppDelegate.swift in Sources */,
+				ACE79AF01AB7283E0091153D /* RootViewController.swift in Sources */,
 				AC4DE8351AB6EAA7002616A0 /* SelectCurrencyViewController.swift in Sources */,
+				ACE79AEC1AB714E20091153D /* Server.swift in Sources */,
 				AC4DE8371AB6F068002616A0 /* Transaction.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

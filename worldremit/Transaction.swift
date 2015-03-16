@@ -9,7 +9,7 @@
 import UIKit
 
 class Transaction: NSObject {
-    var receipient: String?
+    dynamic var recipient: String?
     dynamic var sendingCurrency: String?
     dynamic var receivingCurrency: String?
     dynamic var sendingAmount: NSNumber?
